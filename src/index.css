@@ -1,0 +1,283 @@
+ body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+header{
+  background-color: white;
+  padding: 15px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.brand-logo{
+  height: 90px;
+  width: 200px;
+}
+header nav {
+  display: flex; 
+  justify-content: space-between; 
+  flex-grow: 1; 
+}
+
+header nav ul{
+  list-style-type:none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+header nav ul li a{
+  color:black;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+}
+
+
+.input{ 
+  padding-left: 35px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: solid grey 1px;
+  padding: 8px;
+
+  
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  color: #888;
+  font-size: 18px;
+}
+
+
+input::placeholder {
+  padding-left: 35px; 
+}
+
+
+.home-body{
+  background-color:rgb(244, 240, 240);
+  padding: 20px;
+  text-align: center;
+  padding-top: 60px;
+  height: 80vh;
+}
+
+.main-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+
+.left-column, .right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+
+
+.my-card {
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.my-card:hover{
+  box-shadow: 8px 8px 8px grey;
+}
+
+.card-img {
+  height: 200px !important; 
+  object-fit: cover; 
+  width: 100%; 
+}
+
+
+.carousel-container {
+  width: 100%;
+  height: 400px; 
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.carousel-control-prev, 
+.carousel-control-next {
+  display: none !important;
+}
+
+
+.carousel-indicators {
+  display: none !important;
+}
+
+.sign-in-btn {
+  margin-top: 50px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: rgb(248, 248, 111) !important;
+  border: none;
+  color: rgb(10, 10, 10) !important;
+  cursor: pointer;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border: 1px solid yellow !important;
+  box-shadow: 2px 2px 2px grey;
+}
+
+.sign-in-btn:hover {
+  background-color: rgb(241, 176, 64) !important;
+}
+
+@media (max-width: 767px) {
+  .main-row {
+    flex-direction: column; 
+  }
+  .left-column, .right-column {
+    align-items: center; 
+  }
+  .carousel-container {
+    width: 100%; 
+    height: 300px; 
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  header nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .search-bar {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .input {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+
+/* footer */
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  width: 30%;
+}
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-left p,
+.footer-middle ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-middle ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-middle ul li {
+  margin: 5px 0;
+}
+
+.footer-middle ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-middle ul li a:hover {
+  color: #f0a500;
+}
+
+/* Social media icons */
+.social-icons a {
+  margin-right: 15px;
+  font-size: 24px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f0a500;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #222;
+}
+
+
+
+
+
+
