@@ -17,7 +17,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <ErrorPage />,  //Handle errors if a route doesn't match
+    errorElement: <ErrorPage />,
     children: [
       { path: "/", element: <Home /> },
       { path: '/loginpage', element: <LoginPage /> },
